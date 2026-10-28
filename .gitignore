@@ -1,0 +1,29 @@
+node_modules/
+dist/
+.env
+.env.local
+*.tsbuildinfo
+.DS_Store
+
+# Local backups and recovered build files
+.campigo-*-backup-*/
+.seo-backup-*/
+.tool-pages-backup-*/
+dist-before-*/
+recovered-source/
+package.json.backup-*
+
+# Local Firebase state
+.firebase/
+
+# Editor-created backup copies
+*.before-*
+*.backup-*
+*.repair-*
+*.pre-target-processing
+
+# Backend is maintained in its own GitHub repository
+/server/
+
+# Local reports and generated files
+audit-report.json

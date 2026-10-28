@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: white;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  button:focus-visible,
+  [contenteditable]:focus-visible {
+    outline: 3px solid rgb(165 180 252);
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 640px) {
+  [contenteditable] {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+}
